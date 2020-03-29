@@ -25,11 +25,27 @@ $data_provinsi = KawalCorona::getProvinces();
 
 
 // tanpa facades
-use Pravodev\KawalCorona\KawalCorona;
+use Pravodev\KawalCoronaLaravel\KawalCorona;
 
 $corona = new KawalCorona;
 $corona->getProvinces();
 
+```
+
+secara default, data yang diambil akan dicache selama 1 jam.
+
+Untuk mengubah waktu lama cachenya :
+```
+php artisan vendor:publish --provider="Pravodev\KawalCoronaLaravel\ServiceProvider"
+
+```
+
+ubah value remember di config/kawalcorona.php 
+
+```
+return [
+    'remember' => 3600
+]
 ```
 
 ## List method yang tersedia
