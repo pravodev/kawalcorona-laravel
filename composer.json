@@ -39,5 +39,7 @@
                 "KawalCorona": "Pravodev\\KawalCoronaLaravel\\Facades\\KawalCorona"
             }
         }
-    }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable": true
 }
