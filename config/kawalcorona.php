@@ -1,5 +1,5 @@
 <?php
 
 return [
-    'remember' => 3600
+    'remember' => 3600,
 ];
