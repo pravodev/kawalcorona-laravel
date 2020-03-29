@@ -1,6 +1,6 @@
 # KawalCorona
 
-Class wrapper untuk mengambil data dari RestApi api.kawalcorona.com
+Class wrapper untuk mengambil data dari RestApi api.kawalcorona.com untu laravel 5.7 , 6 dan 7
 
 ## Cara Install
 ```
