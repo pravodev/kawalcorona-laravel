@@ -1,0 +1,44 @@
+{
+    "name": "pravodev/kawalcorona-laravel",
+    "type": "library",
+    "license": "MIT",
+    "description": "KawalCorona package for laravel",
+    "authors": [
+        {
+            "name": "Rifqi Khoeruman Azam",
+            "email": "pravodev@gmail.com"
+        }
+    ],
+    "require": {
+        "php": ">=7.2.5",
+        "illuminate/cache": "^5.7|^6.0|^7.0",
+        "illuminate/config": "5.7|^6.0|^7.0",
+        "illuminate/support": "5.7|^6.0|^7.0",
+        "illuminate/foundation": "5.7|^6.0|^7.0",
+        "illuminate/http": "5.7|^6.0|^7.0",
+        "pravodev/kawalcorona": "^1.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^8.4|^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Pravodev\\KawalCoronaLaravel\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Pravodev\\KawalCoronaLaravel\\ServiceProvider"
+            ],
+            "aliases": {
+                "KawalCorona": "Pravodev\\KawalCoronaLaravel\\Facades\\KawalCorona"
+            }
+        }
+    }
+}
